@@ -1,13 +1,100 @@
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/LatoRegular.ttf);
+}
+@font-face {
+  font-family: almoni-dl-aaa-regular;
+  src: url(../fonts/almoni-dl-aaa-regular.otf);
+}
+@font-face {
+  font-family: almoni-dl-aaa-bold;
+  src: url(../fonts/almoni-dl-aaa-bold.otf);
+}
+@font-face {
+  font-family: electricVibe;
+  src: url(../fonts/electricVibe.ttf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  direction: rtl;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+header .navHead {
+  display: flex;
+  justify-content: space-around;
+  margin-right: auto;
+  height: 160px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav.nav_right a {
+  font-family: "almoni-dl-aaa-regular";
+  font-size: 2rem;
+  text-decoration: none;
+  color: #071a45;
+  padding: 0 1rem;
+}
+header nav.nav_right a.active {
+  color: #3982cf;
+}
+header nav.nav_left a {
+  padding: 0 .3rem;
+}
+.mainHeader {
+  color: #fff;
+  font-size: 1.75rem;
+  font-family: "almoni-dl-aaa-bold";
+  padding: 175px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainHeader1 {
+background-image: url("../pics/headerMainPic1.png");
+}
+.mainHeader2 {
+  background-image: url("../pics/headerMainPic2.png");
+}
+.mainHeader3 {
+  background-image: url("../pics/headerMainPic3.png");
+}
+.mainHeader > div {
+  max-width: 900px;
+  text-align: right;
+  padding-left: 200px;
+}
+.mainHeader > div > * {
+  margin: 0;
+}
+.mainHeader h2 {
+  font-size: 16.5rem;
+  line-height: 75%;
+}
+.mainHeader p {
+  padding: 40px 0 50px ;
+}
+.mainHeader a {
+  padding: 25px 70px;
+  text-decoration: none;
+  border: 3px solid #f4ff10;
+  border-radius: 50px;
+  color: #fff;
+}
+.carousel {
+  direction: ltr;
+}
+.carousel .control-dots .dot {
+  border-radius: 50%;
+  background-color: rgba(2, 28, 40, 0);
 }

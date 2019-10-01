@@ -1,0 +1,61 @@
+.programsCarousel {
+    direction: ltr;
+    text-align: center;
+    background-image: url("../pics/figureBG.png");
+}
+.programsCarousel h2 {
+    text-align: center;
+    font-size: 6rem;
+    margin: 0;
+}
+.programsCarousel > p {
+    max-width: 1150px;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
+.programsCarousel > a {
+    font-weight: bold;
+    color: #190825;
+    border: 3px solid #f4ff10;
+    border-radius: 50px;
+    padding: 25px 70px;
+}
+.programsCarouselChart > p {
+    font-size: 1.5rem;
+}
+.programsCarouselCont {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: #eee;
+    color: #fff;
+    padding: 0 15px 15px 0;
+}
+.programsCarouselCont.bottomCont {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.programsCarouselCont.centeredCont {
+    justify-content: center;
+}
+.programsCarouselCont * {
+    margin: 0;
+}
+.programsCarouselCont > h3 {
+    font-size: 3rem;
+}
+.programsCarouselCont > h4 {
+    font-size: 2rem;
+}
+.programsCarouselCont > p {
+    font-size: 1.4rem;
+}
+.sc-ifAKCX button {
+    border: none;
+    font-size: 3rem;
+    background: none;
+    cursor: pointer;
+}
+.imYUvI {
+    padding-bottom: 30px;
+}
