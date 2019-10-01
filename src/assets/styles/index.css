@@ -84,13 +84,6 @@ background-image: url("../pics/headerMainPic1.png");
 .mainHeader p {
   padding: 40px 0 50px ;
 }
-.mainHeader a {
-  padding: 25px 70px;
-  text-decoration: none;
-  border: 3px solid #f4ff10;
-  border-radius: 50px;
-  color: #fff;
-}
 .carousel {
   direction: ltr;
 }

@@ -1,9 +1,6 @@
-// @ts-ignore
-/* eslint-disable import/first */
 import React from 'react'
-// import '../../assets/styles/App.css';
-
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 import facebook  from "../assets/pics/header-promotion/facebook.png"
@@ -61,21 +58,21 @@ export class HeaderCarousel extends React.Component {
                     <div>
                         <h2>סטטיק ובן אל</h2>
                         <p>היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו</p>
-                        <a href="#">לשידור החי</a>
+                        <a href="#" className="commonLink">לשידור החי</a>
                     </div>
                 </div>
                 <div className="mainHeader mainHeader2">
                     <div>
                         <h2>סטטיק ובן אל</h2>
                         <p>היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו</p>
-                        <a href="#">לשידור החי</a>
+                        <a href="#" className="commonLink">לשידור החי</a>
                     </div>
                 </div>
                 <div className="mainHeader mainHeader3">
                     <div>
                         <h2>סטטיק ובן אל</h2>
                         <p>היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו</p>
-                        <a href="#">לשידור החי</a>
+                        <a href="#" className="commonLink">לשידור החי</a>
                     </div>
                 </div>
             </Carousel>

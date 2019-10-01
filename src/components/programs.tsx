@@ -7,9 +7,9 @@ export function Programs() {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const chevronWidth = 40;
     return (
-        <div className="programsCarousel" style={{ padding: `0 ${chevronWidth}px` }}>
-            <h2>התוכניות</h2>
-            <p>.קרורב המציש הירקולב וקומצ ,יבננ וקיבל חלמצ וטוסנמ ,אילב שצ ימחשצ תל .חערל חיתת ץניק ףולב ימורפל ףונעו - קרלב ןוסמל טקפנ תפנב ,רילק ץפונומ קיטסאלב ופידוא .ףודומ רמב יזאווק תילא גניסיפידא ררוטקסנוק ,טמא טיס רולוד םוספיא םרול</p>
+        <div className="programsCarousel">
+            <h2 className="commonTitle">התוכניות</h2>
+            <p className="commonPar">.קרורב המציש הירקולב וקומצ ,יבננ וקיבל חלמצ וטוסנמ ,אילב שצ ימחשצ תל .חערל חיתת ץניק ףולב ימורפל ףונעו - קרלב ןוסמל טקפנ תפנב ,רילק ץפונומ קיטסאלב ופידוא .ףודומ רמב יזאווק תילא גניסיפידא ררוטקסנוק ,טמא טיס רולוד םוספיא םרול</p>
             <ItemsCarousel
                 activeItemIndex={activeItemIndex}
                 requestToChangeActive={setActiveItemIndex}
@@ -33,7 +33,7 @@ export function Programs() {
                     })
                     }
             </ItemsCarousel>
-            <a href="#">לכל התכניות</a>
+            <a href="#" className="commonLink">לכל התכניות</a>
         </div>
     );
 }

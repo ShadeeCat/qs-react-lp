@@ -1,0 +1,41 @@
+.liveCarousel h2 {
+    max-width: 500px;
+    margin: auto;
+    line-height: 85%;
+}
+.carousel .thumb {
+    border-radius: 1rem;
+    margin: auto;
+    width: 10%;
+    transform: translateX(550px) !important;
+}
+.carousel .thumb.selected, .carousel .thumb:hover {
+    border: 3px solid yellow;
+}
+.carousel .thumbs-wrapper {
+    padding: 20px;
+    margin: 0;
+    background-color: #190825;
+}
+.carousel .slider-wrapper {
+    width: 70%;
+}
+.carousel.carousel-slider {
+    background-color: #190825;
+}
+.carousel.carousel-slider .control-arrow {
+    margin: 200px;
+}
+.carousel.carousel-slider .control-arrow:hover {
+    background: rgba(0,0,0,.0);
+}
+.carousel .control-prev.control-arrow:before {
+    content: '❮';
+    border: 0;
+    font-size: 3rem;
+}
+.carousel .control-next.control-arrow:before {
+    content: '❯';
+    border: 0;
+    font-size: 3rem;
+}

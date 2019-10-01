@@ -2,24 +2,9 @@
     direction: ltr;
     text-align: center;
     background-image: url("../pics/figureBG.png");
+    padding: 0px 200px 80px;
 }
-.programsCarousel h2 {
-    text-align: center;
-    font-size: 6rem;
-    margin: 0;
-}
-.programsCarousel > p {
-    max-width: 1150px;
-    margin: 1rem auto;
-    font-size: 1.5rem;
-}
-.programsCarousel > a {
-    font-weight: bold;
-    color: #190825;
-    border: 3px solid #f4ff10;
-    border-radius: 50px;
-    padding: 25px 70px;
-}
+
 .programsCarouselChart > p {
     font-size: 1.5rem;
 }
