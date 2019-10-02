@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/querySolTest/static/css/main.e1a5ef03.chunk.css",
+    "main.js": "/querySolTest/static/js/main.f58ec23f.chunk.js",
+    "main.js.map": "/querySolTest/static/js/main.f58ec23f.chunk.js.map",
+    "runtime-main.js": "/querySolTest/static/js/runtime-main.a7fc2314.js",
+    "runtime-main.js.map": "/querySolTest/static/js/runtime-main.a7fc2314.js.map",
+    "static/css/2.3c1ddb0a.chunk.css": "/querySolTest/static/css/2.3c1ddb0a.chunk.css",
+    "static/js/2.a9b25044.chunk.js": "/querySolTest/static/js/2.a9b25044.chunk.js",
+    "static/js/2.a9b25044.chunk.js.map": "/querySolTest/static/js/2.a9b25044.chunk.js.map",
+    "index.html": "/querySolTest/index.html",
+    "precache-manifest.bf9770bab0133bfd16a2f10687b5f122.js": "/querySolTest/precache-manifest.bf9770bab0133bfd16a2f10687b5f122.js",
+    "service-worker.js": "/querySolTest/service-worker.js",
+    "static/css/2.3c1ddb0a.chunk.css.map": "/querySolTest/static/css/2.3c1ddb0a.chunk.css.map",
+    "static/css/main.e1a5ef03.chunk.css.map": "/querySolTest/static/css/main.e1a5ef03.chunk.css.map",
+    "static/media/index.css": "/querySolTest/static/media/headerMainPic3.a86564a2.png",
+    "static/media/auditorium.png": "/querySolTest/static/media/auditorium.d3323cf2.png",
+    "static/media/choosen.png": "/querySolTest/static/media/choosen.05936ee0.png",
+    "static/media/programs.css": "/querySolTest/static/media/figureBG.097d75fc.png",
+    "static/media/mic.png": "/querySolTest/static/media/mic.a22b1ddf.png",
+    "static/media/onlineMic.png": "/querySolTest/static/media/onlineMic.c718039a.png"
+  }
+}
