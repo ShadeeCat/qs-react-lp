@@ -33,15 +33,16 @@ export function Programs() {
                     })
                     }
             </ItemsCarousel>
-            <a href="#" className="commonLink">לכל התכניות</a>
+            <a href="# " className="commonLink">לכל התכניות</a>
         </div>
     );
 }
 
-// @ts-ignore
-const ProgramsCarouselChart = (props) => {
+
+const ProgramsCarouselChart = (props: Omit<Program & { key: number, bgPic: string }, 'picture'>)  => {
+        // <div className={props.class} style={{backgroundImage: 'programsCarousel/' + props.bgPic}}>
     return <div className="programsCarouselChart">
-        <div className={props.class} style={{backgroundImage: props.bgPic}}>
+        <div className={props.class} style={{ backgroundImage: `url(bgPics/programsCarousel/${ props.bgPic })` }}>
             <h3>{props.h3}</h3>
             <h4>{props.h4}</h4>
             <p>{props.text}</p>
@@ -49,29 +50,39 @@ const ProgramsCarouselChart = (props) => {
         <p>{props.caption}</p>
     </div>
 };
-// @ts-ignore
-const programsCarouselCont = [
-    {
+
+interface Program {
+    h3: string,
+    h4: string,
+    text: string,
+    caption: string,
+    class: string,
+    picture: string,
+}
+const programsCarouselCont: Program[] = [
+{
         h3: "TOP HITS",
         h4: "עם קרן מילוא",
         text: "ה' - 8:00 - 10:00",
         caption: "לורם איפסום",
         class: "programsCarouselCont bottomCont",
-        picture: "../assets/pics/programsCarousel/firstPic.png"
+        picture: "firstPic.png"
     },
     {
         h3: "VIP",
         h4: "עם קרן מילוא",
         text: "ה' - 15:00 - 16:00",
         caption: "לורם איפסום",
-        class: "programsCarouselCont centeredCont"
+        class: "programsCarouselCont centeredCont",
+        picture: "secondPic.png"
     },
     {
         h3: "בוקר חדש",
         h4: "עם קרן מילוא",
         text: "ה' - 8:00 - 10:00 ",
         caption: "לורם איפסום",
-        class: "programsCarouselCont centeredCont"
+        class: "programsCarouselCont centeredCont",
+        picture: "thirdPic.png"
     },
     {
         h3: "Pop-up",
@@ -79,6 +90,7 @@ const programsCarouselCont = [
         text: "ה' - 15:00 - 16:00",
         caption: "לורם איפסום",
         class: "programsCarouselCont bottomCont",
+        picture: "fourthPic.png"
     },
     {
         h3: "TOP HITS",
@@ -86,6 +98,7 @@ const programsCarouselCont = [
         text: "ה' - 8:00 - 10:00",
         caption: "לורם איפסום",
         class: "programsCarouselCont centeredCont",
+        picture: "secondPic.png"
     },
     {
         h3: "TOP HITS",
@@ -93,6 +106,7 @@ const programsCarouselCont = [
         text: "ה' - 8:00 - 10:00",
         caption: "לורם איפסום",
         class: "programsCarouselCont bottomCont",
+        picture: "fourthPic.png"
     },
     {
         h3: "TOP HITS",
@@ -100,5 +114,6 @@ const programsCarouselCont = [
         text: "ה' - 8:00 - 10:00",
         caption: "לורם איפסום",
         class: "programsCarouselCont bottomCont",
+        picture: "secondPic.png"
     }
 ];

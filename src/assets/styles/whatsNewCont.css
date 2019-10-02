@@ -1,0 +1,24 @@
+.whatsNew {
+    padding-top: 30px;
+    text-align: center;
+}
+.whatsNewCont {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1450px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.whatsNewCont .picText, .whatsNewCont .picCapture {
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    max-width: 260px;
+}
+.whatsNewCont img {
+    padding: 60px 0;
+    max-width: 100%;
+}
+.whatsNewCont .centralPic {
+    max-width: 50%;
+}

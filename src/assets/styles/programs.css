@@ -2,9 +2,12 @@
     direction: ltr;
     text-align: center;
     background-image: url("../pics/figureBG.png");
-    padding: 0px 200px 80px;
+    padding-bottom: 80px;
 }
-
+.imYUvI {
+    max-width: 1500px;
+    margin: auto;
+}
 .programsCarouselChart > p {
     font-size: 1.5rem;
 }
@@ -15,6 +18,7 @@
     background-color: #eee;
     color: #fff;
     padding: 0 15px 15px 0;
+    background-size: cover;
 }
 .programsCarouselCont.bottomCont {
     justify-content: flex-end;

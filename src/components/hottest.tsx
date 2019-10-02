@@ -15,34 +15,35 @@ export function Hottest() {
             />
         })}
         </div>
-        <a className="commonLink" href="#">לכל הקטעים</a>
+        <a className="commonLink" href="# ">לכל הקטעים</a>
     </div>
 }
 
+interface hottestSingleProps {
+    text: string;
+    pic: string;
+}
 
-// @ts-ignore
-const HottestSingle = (props) => {
-    return <div className="promotion">
+const HottestSingle = (props: hottestSingleProps) => {
+    return <div className="promotion" style={{ backgroundImage: `url(bgPics/hottest/${ props.pic })` }}>
         <h5>{props.text}</h5>
     </div>
-}
-
-
+};
 const hottestList = [
     {
         text: "עדן בן זקן מרימה באולפן",
-        pic: "../assets/pics/hottest/edenBenZaken.png"
+        pic: "edenBenZaken.png"
     },
     {
         text: "סטטיק ובן אל בספיישל מאש אפים",
-        pic: "../assets/pics/hottest/static1.png"
+        pic: "static1.png"
     },
     {
         text: "ספיישל של יום העצמאוץ",
-        pic: "../assets/pics/hottest/independenceDay.png"
+        pic: "independenceDay.png"
     },
     {
         text: "יובל דיין ושלומי שבת שרים מהלב",
-        pic: "../assets/pics/hottest/heartSongs.png"
+        pic: "heartSongs.png"
     }
 ];

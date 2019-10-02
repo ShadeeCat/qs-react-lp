@@ -15,16 +15,16 @@ export class LiveBroadcast extends React.Component {
             <h2 className="commonTitle">צפו באולפן בשידור חיי</h2>
             <Carousel autoPlay={false} showIndicators={false} showStatus={false} >
                 <div>
-                    <img src={onlineMic} />
+                    <img src={ onlineMic } alt="onlineMic" />
                 </div>
                 <div>
-                    <img src={ choosen } />
+                    <img src={ choosen } alt="choosen" />
                 </div>
                 <div>
-                    <img src={ mic } />
+                    <img src={ mic } alt="mic" />
                 </div>
                 <div>
-                    <img src={ auditorium } />
+                    <img src={ auditorium } alt="auditorium" />
                 </div>
             </Carousel>
         </div>

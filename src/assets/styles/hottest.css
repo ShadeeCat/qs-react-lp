@@ -6,11 +6,12 @@
     padding-bottom: 5rem;
 }
 .hottestCont {
-    max-width: 1300px;
+    max-width: 1350px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 4rem;
+    color: #fff;
 }
 .promotion {
     display: flex;
@@ -19,6 +20,8 @@
     width: 650px;
     height: 260px;
     text-align: start;
+    margin: 2px;
+    background-size: cover;
 }
 .promotion > h5 {
     margin: 0;

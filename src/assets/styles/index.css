@@ -31,6 +31,7 @@ code {
 }
 header .navHead {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-right: auto;
   height: 160px;
@@ -38,6 +39,7 @@ header .navHead {
 header nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 header nav.nav_right a {
   font-family: "almoni-dl-aaa-regular";

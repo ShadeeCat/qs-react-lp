@@ -8,6 +8,9 @@ import {Nav, HeaderCarousel} from "./components/header"
 import { Programs } from "./components/programs"
 import { Hottest } from "./components/hottest"
 import { LiveBroadcast } from "./components/liveBroadcast"
+import { WhatsNew } from "./components/whatsNew"
+import { FooterPics } from "./components/footer";
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +22,11 @@ function App() {
             <Programs />
             <Hottest />
             <LiveBroadcast />
+            <WhatsNew />
         </main>
+        <footer>
+            <FooterPics />
+        </footer>
     </div>
   );
 }
