@@ -1,5 +1,6 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
+import "../assets/styles/header.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
@@ -42,28 +43,59 @@ export class HeaderCarousel extends React.Component {
     render() {
         return (
             <Carousel className="carousel" showArrows={ false } autoPlay infiniteLoop  showThumbs={false} showStatus={false}>
-                <div className="mainHeader mainHeader1">
-                    <div>
-                        <h2>סטטיק ובן אל</h2>
-                        <p>היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו</p>
-                        <a href="# " className="commonLink">לשידור החי</a>
-                    </div>
-                </div>
-                <div className="mainHeader mainHeader2">
-                    <div>
-                        <h2>סטטיק ובן אל</h2>
-                        <p>היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו</p>
-                        <a href="# " className="commonLink">לשידור החי</a>
-                    </div>
-                </div>
-                <div className="mainHeader mainHeader3">
-                    <div>
-                        <h2>סטטיק ובן אל</h2>
-                        <p>היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו</p>
-                        <a href="# " className="commonLink">לשידור החי</a>
-                    </div>
-                </div>
+                {
+                    HeaderCarouselList.map((text, index) => {
+                        return <HeaderCarouselPrivet
+                            bgPicture={text.bgPicture}
+                            capture={text.capture}
+                            text={text.text}
+                            nameLink={text.nameLink}
+                            textLink={text.textLink}
+                            key={index}
+                        />
+                    })
+                }
             </Carousel>
         );
     }
 }
+interface headerCarouselProps {
+    bgPicture: string,
+    capture: string,
+    text: string,
+    nameLink: string,
+    textLink: string
+}
+const HeaderCarouselPrivet = (props:headerCarouselProps ) => {
+    return <div className="mainHeader" style={{ backgroundImage: `url(bgPics/headerMainPics/${ props.bgPicture })` }}>
+        <div className="mainHeaderCont">
+            <h2>{props.capture}</h2>
+            <p>{props.text}</p>
+            <a href={props.nameLink} className="commonLink">{props.textLink}</a>
+        </div>
+    </div>
+};
+
+const HeaderCarouselList = [
+    {
+        bgPicture: "headerMainPic1.png",
+        capture: "סטטיק ובן אל",
+        text: "היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו",
+        nameLink: "# ",
+        textLink: "לשידור החי"
+    },
+    {
+        bgPicture: "headerMainPic2.png",
+        capture: "סטטיק ובן אל",
+        text: "היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו",
+        nameLink: "# ",
+        textLink: "לשידור החי"
+    },
+    {
+        bgPicture: "headerMainPic3.png",
+        capture: "סטטיק ובן אל",
+        text: "היום מגיעים לאולפן שלנו הצמד הכי מצליח בישראל השידור יחל בשעה 14:00 אל תפספסו",
+        nameLink: "# ",
+        textLink: "לשידור החי"
+    }
+];

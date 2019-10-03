@@ -1,7 +1,6 @@
 import React from "react"
 
 import "../assets/styles/hottest.css"
-import "../assets/pics/hottest/heartSongs.png"
 
 export function Hottest() {
     return  <div className="hottest">

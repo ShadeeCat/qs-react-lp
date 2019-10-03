@@ -1,0 +1,58 @@
+header .navHead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: auto;
+    height: 160px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header nav.nav_right a {
+    font-family: "almoni-dl-aaa-regular";
+    font-size: 2rem;
+    text-decoration: none;
+    color: #071a45;
+    padding: 0 1rem;
+}
+header nav.nav_right a.active {
+    color: #3982cf;
+}
+header nav.nav_left a {
+    padding: 0 .3rem;
+}
+.mainHeader {
+    color: #fff;
+    font-size: 1.75rem;
+    font-family: "almoni-dl-aaa-bold";
+    padding: 175px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainHeader > div {
+    max-width: 900px;
+    text-align: right;
+    padding-left: 200px;
+}
+.mainHeader > div > * {
+    margin: 0;
+}
+.mainHeader h2 {
+    font-size: 16.5rem;
+    line-height: 75%;
+}
+.mainHeader p {
+    padding: 40px 0 50px;
+}
+.mainHeader a {
+    color: #fff;
+}
+.carousel {
+    direction: ltr;
+}
+.carousel .control-dots .dot {
+    border-radius: 50%;
+    background-color: rgba(2, 28, 40, 0);
+}

@@ -3,7 +3,30 @@ import React from "react";
 import "../assets/styles/footer.css"
 
 export const Footer = () => {
-
+    return <footer className="footerLi">
+        <div className="yellowBlock">
+            <a href="# ">מה חדש</a>
+            <a href="# ">אפליקציות</a>
+            <a href="# ">אודות</a>
+            <a href="# ">דף הבית</a>
+        </div>
+        <div>
+            <a href="# ">שם התכנית</a>
+            <div>
+                <a href="# ">שם התכנית</a>
+                <a href="# ">שם התכנית</a>
+                <a href="# ">שם התכנית</a>
+                <a href="# ">שם התכנית</a>
+                <a href="# ">שם התכנית</a>
+            </div>
+        </div>
+        <div>
+            <a href="# ">צור קשר</a>
+            <a href="# ">TV פרסום ברדיו</a>
+            <a href="# ">FM 100</a>
+            <a href="# ">FM 100</a>
+        </div>
+    </footer>
 };
 
 export const FooterPics = (props: footerPicsProps) => {
@@ -19,7 +42,11 @@ export const FooterPics = (props: footerPicsProps) => {
     </div>
 };
 const FooterPic = (props: footerPicsProps) => {
-    return <img src={`bgPics/footerPics/${ props.pic }`} alt={props.alt} className={props.class}/>
+    return <img
+        src={`bgPics/footerPics/${props.pic }`}
+        alt={props.alt}
+        className={props.class}
+    />
 };
 interface footerPicsProps {
     pic: string,
